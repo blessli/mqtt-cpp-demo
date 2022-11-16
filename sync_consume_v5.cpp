@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 
 	auto connOpts = mqtt::connect_options_builder()
 		.user_name("emqx2")
-		.password("-----------------")
+		.password("test_password123")
 		.mqtt_version(MQTTVERSION_5)
 		.automatic_reconnect(seconds(2), seconds(30))
 		.clean_session(false)
@@ -64,6 +64,7 @@ int main(int argc, char* argv[])
 
 	try {
 		cout << "Connecting to the MQTT server..." << flush;
+		// 权限错误：MQTT error [135]: CONNACK return code
 		mqtt::connect_response rsp = cli.connect(connOpts);
 		cout << "OK\n" << endl;
 
