@@ -1,36 +1,3 @@
-// sync_consume.cpp
-//
-// This is a Paho MQTT C++ client, sample application.
-//
-// This application is an MQTT consumer/subscriber using the C++ synchronous
-// client interface, which uses the queuing API to receive messages.
-//
-// The sample demonstrates:
-//  - Connecting to an MQTT server/broker
-//  - Using a persistent (non-clean) session
-//  - Subscribing to multiple topics
-//  - Receiving messages through the queueing consumer API
-//  - Recieving and acting upon commands via MQTT topics
-//  - Auto reconnect
-//  - Updating auto-reconnect data
-//
-
-/*******************************************************************************
- * Copyright (c) 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
- *
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * and Eclipse Distribution License v1.0 which accompany this distribution.
- *
- * The Eclipse Public License is available at
- *    http://www.eclipse.org/legal/epl-v10.html
- * and the Eclipse Distribution License is available at
- *   http://www.eclipse.org/org/documents/edl-v10.php.
- *
- * Contributors:
- *    Frank Pagliughi - initial implementation and documentation
- *******************************************************************************/
-
 #include <iostream>
 #include <cstdlib>
 #include <string>
